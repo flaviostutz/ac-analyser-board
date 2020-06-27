@@ -2906,7 +2906,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="20.32" y="96.52" size="1.778" layer="97">Current Sensors</text>
 <text x="104.14" y="96.52" size="1.778" layer="97">Voltage Sensors</text>
 <text x="187.96" y="96.52" size="1.778" layer="97">Power Factor Sensors</text>
-<text x="20.32" y="12.7" size="1.778" layer="97">ESP8266</text>
+<text x="20.32" y="7.62" size="1.778" layer="97">ESP8266</text>
 <text x="223.52" y="96.52" size="1.778" layer="97">ADCs</text>
 </plain>
 <instances>

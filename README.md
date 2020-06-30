@@ -5,6 +5,8 @@ https://www.slideshare.net/FebinPaul5/automatic-power-factor-correction-73296799
 
 ## Development Preparation
 
+### Board dev
+
 * Use a ESP8266 NodeMCU board to run firmware during development
 
 * Install NodeMCU serial driver on your machine
@@ -22,11 +24,21 @@ https://www.slideshare.net/FebinPaul5/automatic-power-factor-correction-73296799
   * Use the newly created device port to connect to the NodeMCU device connected to Raspberry Pi
   * Now if you have any "AC 220V problem" on the USB port, it will burn just the Raspberry Pi!
 
-* Install Visual Code. Open it and install extension "PlatformIO"
+### Firmware dev
+
+* Install Visual Code
+* Open it and install extension "PlatformIO"
+* Add PlatformIO CLI to path by adding the following line to ~/.zprofile in MacOSX
+
+```sh
+export PATH=$PATH:~/.platformio/penv/bin
+```
+
+* Install Homie libs to PlatformIO with ```pio lib -g install Homie```
+* Build your project with ```pio ci --project-conf platformio.ini .```
 
 ## Development Problems
 
 * When using stutzthings esp board v2.1, upload will only work after resetting ESP8266 manually into bootloader (even with DTR and RTS connected, ck boot is not working for some reason). Connect GND to GPIO0 and then connect GND to RST for reset it. Keep GPIO0 with GND and start upload on PlatformIO.
-
 
 
